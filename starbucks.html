@@ -12,13 +12,57 @@
             line-height: 1.6;
         }
         header {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             padding: 20px 10px;
             background-color: #f4f4f4;
+        }
+        header .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 10px;
         }
         header img {
             max-width: 100%;
             height: auto;
+        }
+        header .search-bar {
+            display: flex;
+            align-items: center;
+            width: 40%;
+        }
+        header .search-bar input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        header .search-bar button {
+            padding: 8px 10px;
+            border: none;
+            background-color: #00704a;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+        header .search-bar button:hover {
+            background-color: #00593a;
+        }
+        header .extra-tab {
+            background-color: #e3e3e3;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        header .extra-tab a {
+            color: #00704a;
+            text-decoration: none;
+            font-size: 0.9rem;
         }
         nav {
             background-color: #00704a;
@@ -66,7 +110,18 @@
 </head>
 <body>
     <header>
-        <img src="https://www.logogenie.net/images/articles/starbucks-logo8.jpg" alt="Logo de Starbucks">
+        <div class="header-top">
+            <div class="logo">
+                <img src="https://media.revistagq.com/photos/5d5d383031110c000879872d/1:1/w_1080,h_1080,c_limit/logo-starbucks.jpg" alt="Logo de Starbucks" style="height: 50px;">
+            </div>
+            <div class="searching-bar">
+                <input type="text" placeholder="Buscarr...">
+                <button type="button">Buscar productos</button>
+            </div>
+            <div class="extra-tab">
+                <a href="#">Pestaña de manager</a>
+            </div>
+        </div>
         <h1>Starbucks</h1>
     </header>
 
