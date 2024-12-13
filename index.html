@@ -3,126 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks - Temporadas Festivas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 10px;
-            background-color: #f4f4f4;
-        }
-        header .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            padding: 10px;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
-        header .search-bar {
-            display: flex;
-            align-items: center;
-            width: 40%;
-        }
-        header .search-bar input[type="text"] {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        header .search-bar button {
-            padding: 8px 10px;
-            border: none;
-            background-color: #00704a;
-            color: white;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-left: 5px;
-        }
-        header .search-bar button:hover {
-            background-color: #00593a;
-        }
-        header .extra-tab {
-            background-color: #e3e3e3;
-            padding: 5px 10px;
-            border-radius: 4px;
-        }
-        header .extra-tab a {
-            color: #00704a;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        nav {
-            background-color: #00704a;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main, aside {
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 1200px;
-        }
-        main {
-            text-align: center;
-        }
-        main img {
-            max-width: 100%;
-            height: 50%;
-            border-radius: 8px;
-        }
-        aside {
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            padding: 15px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        footer em {
-            font-size: 0.9rem;
-        }
-    </style>
+    <title>Temporadas Festivas|Starbucks</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
-        <div class="header-top">
-            <div class="logo">
-                <img src="https://media.revistagq.com/photos/5d5d383031110c000879872d/1:1/w_1080,h_1080,c_limit/logo-starbucks.jpg" alt="Logo de Starbucks" style="height: 50px;">
-            </div>
-            <div class="searching-bar">
-                <input type="text" placeholder="Buscarr...">
-                <button type="button">Buscar productos</button>
-            </div>
-            <div class="extra-tab">
-                <a href="#">Pestaña de manager</a>
-            </div>
-        </div>
-        <h1>Starbucks</h1>
+        <header>
+            <navbar class="navbar">
+                <nav class="navbar-left">
+                    <img src="https://i.pinimg.com/originals/8c/df/ff/8cdfff91b57bf9652c8c44e77208b03d.png" alt="">
+                    <ul>
+                        <li><a href="https://gilean16.github.io/MenuStarbucks/">Menu</a></li>
+                        <li><a href="https://gilean16.github.io/StarbucksFinal/">Rewards</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-right">
+                    <ul>
+                        <li><a href="https://www.google.com.mx/maps/search/Starbucks/@19.4141082,-99.2013658,11.87z?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D">Localizar Tienda</a></li>
+                        <li><a href="https://gilean16.github.io/Unirte/">Ingresar</a></li>
+                        <li><a href="">Unete</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
     </header>
 
     <nav>
@@ -130,10 +33,11 @@
         <a href="#productos">Productos</a>
         <a href="#chambea">Chambea Aquí</a>
     </nav>
-
-    <main>
+    <section class="invitation">
         <h2>¡Celebremos con los favoritos de la temporada!</h2>
         <p>Ven por tus Cranberry Mocha Blanco y disfruta los sabores del momento.</p>
+    </section>
+    <main>
         <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2F2024-10_SB_Latte.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Mujer feliz">
         <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FHOLIDAY_2024-Spooky.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Bebidas">
         <img src="https://djftrby1k8irl.cloudfront.net/s3fs-public/2024-11%2FMerch.png?auto=format,compress&q=70&crop=focalpoint&ar=1.8:1.0&w=1400&fit=max&dpr=2" alt="Cafe molido">
@@ -142,15 +46,48 @@
     <aside>
         <h3>El café perfecto para esta temporada</h3>
         <p>Una taza de café preparada con <strong>Christmas Blend</strong> es la excusa perfecta para disfrutar con tus seres queridos.</p>
-        <ul>
-            <li>Pequeño</li>
-            <li>Mediano</li>
-            <li>Grande</li>
-        </ul>
+        <section class="down">
+            <ul>
+                <li>Pequeño</li>
+                <li>Mediano</li>
+                <li>Grande</li>
+            </ul>
+        </section>
+       
     </aside>
+<hr>
+    <div class="container">
+        <!-- Tarjeta roja -->
+        <div class="card red">
+            <p>Consulta los eventos más recientes.</p>
+            <button><a href="https://www.starbucks.com.mx/seccion/boletines">Aquí</a></button>
+        </div>
 
-    <footer>
-        <em>© Todos los derechos reservados - Starbucks</em>
+        <!-- Tarjeta azul -->
+        <div class="card blue">
+            <p>Términos y condiciones.</p>
+            <button><a href="https://www.starbucks.com.mx/seccion/terminos-y-condiciones">Ver más</a></button>
+        </div>
+    
+    </div>
+
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/StarbucksMexico/?locale=es_LA"><img src="https://img.icons8.com/m_rounded/512/facebook-new.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/starbucksmex/?hl=es-la"><img src="https://www.pngarts.com/files/9/Instagram-Logo-PNG-Pic.png" alt="Instagram"></a>
+            <a href="https://x.com/StarbucksMex?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://freepnglogo.com/images/all_img/1707222563twitter-logo-png.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/@starbucks"><img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="YouTube"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Accesibilidad web</a> |
+            <a href="#">Aviso de privacidad</a> |
+            <a href="#">Boletines</a> |
+            <a href="#">Condiciones de uso</a> |
+            <a href="#">Mapa de sitio</a> |
+            <a href="#">Preferencia sobre cookies</a>
+        </div>
+        <p>© 2024 Starbucks Coffee Company. Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
